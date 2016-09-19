@@ -1,0 +1,302 @@
+<!-- CSS -->
+<style type="text/css" media="all">
+    @import url("//drupal-sandbox.library.oregonstate.edu/modules/system/system.theme.css");
+</style>
+<style type="text/css" media="all">
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/modules/nice_menus/css/nice_menus.css");
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/modules/nice_menus/css/nice_menus_default.css");
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/themes/doug-fir-drupal-7/css/variants/pine/pine.css");
+</style>
+<style type="text/css" media="all">
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/themes/doug-fir-drupal-7/css/less/main.css");
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/themes/doug-fir-d7-library/css/doug_fir_d7_library.css");
+</style>
+<style type="text/css" media="all">
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/themes/doug-fir-drupal-7/bootstrap/css/responsive.css");
+    @import url("//drupal-sandbox.library.oregonstate.edu/sites/all/themes/doug-fir-drupal-7/css/less/main-responsive.css");
+</style>
+<link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic,700' rel='stylesheet' type='text/css'>
+
+<style>
+    /* Pine header & footer customizations */
+    html {
+        background-color: #292929;
+    }
+    .pine #main-menu .menu, .pine #main-menu .nice-menu {
+        margin-left: 6em;
+    }
+    .pine #main-menu .nice-menu > li.menuparent a:hover {
+        background-color: #c34500;
+    }
+    .pine a#search-link {
+        display: none;
+    }
+    .pine #osu-top-hat.new #search-link i {
+        color: #c34500;
+        text-decoration: none;
+    }
+    .pine #osu-top-hat.new #search-link:hover i {
+        color: #ffffff;
+    }
+
+    .pine #main-menu .nice-menu span.nolink {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #252525;
+        border: none;
+        line-height: 16px;
+        margin: 0 2px;
+        display: inline-block;
+        padding: 10px 16px;
+    }
+
+    .pine #main-menu .nice-menu > li.menuparent:hover > span,
+    .pine #main-menu .nice-menu > li.over > span {
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+    }
+
+    /* Footer */
+    .pine #footer .content > .menu > li {
+        float: none;
+        margin-left: 0;
+        max-width: none;
+        padding: 0 0 3px 0;
+    }
+
+    .pine #footer .content > .menu > li > a {
+        font-size: 14px;
+        text-transform: none;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+    .pine #footer a:hover, #footer a:active, #footer a:focus {
+        text-decoration: underline;
+        background-color: transparent;
+    }
+
+    .pine #footer .content hr {
+        border-top: 1px solid #c34500;
+        border-bottom: none;
+        margin: 10px 0;
+        width: 25%;
+    }
+
+    .pine #footer .block-menu .content {
+        margin-left: 3em;
+        margin-top: 0;
+    }
+
+    .pine #footer a.gift-btn {
+        font-size: 20px;
+        background-color: #c34500;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .pine [id^="osul-footer-"] {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .pine [id^="osul-footer-"] h2 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-bottom: 12px;
+        padding: 0 10px 0 2px;
+    }
+
+    .pine #footer ul {
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    .pine #footer .footer-links .content {
+        margin: 0 0 0 10px;
+    }
+
+    .pine #footer div.footer-gift {
+        display: inline-block;
+    }
+
+    .pine #footer .social-media {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .pine #footer .social-media a {
+        padding-bottom: 12px;
+    }
+
+    .pine #footer a i {
+        color: #ffffff;
+    }
+
+
+
+
+    /* LibAnswers-specific customizations */
+    body {
+        background: #ffffff;
+    }
+    a {
+        color: #c34500;
+    }
+    ul li {
+        list-style-image: none;
+    }
+    #s-la-public-header {
+        display: none;
+    }
+    #s-la-bc .breadcrumb {
+        margin: 0 0 10px;
+    }
+    .s-la-box-title h2 {
+        background-color: #f5f2ed;
+        border-radius: 0;
+        color: #c34500;
+        font-family: 'Gudea', Arial, Helvetica, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 30px;
+        padding: 0 10px 0 2px;
+        /*border-bottom: 1px solid #e0e0e0;*/
+        text-transform: uppercase;
+    }
+    .navbar.navbar-default.s-la-color-bars {
+        border: 1px solid #cccccc;
+        background: none;
+    }
+    .s-la-color-bars {
+        background: none;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        padding: 5px 0;
+    }
+    [id^="s-la-box"] > .s-la-box-title {
+        background-color: #f5f2ed;
+        border-bottom: 1px solid #cccccc;
+    }
+    [id^="s-la-box"] > .s-la-box-content {
+        /*border-top: 1px solid #cccccc;*/
+    }
+    .s-la-box-title {
+        padding: 5px;
+    }
+    #s-la-page-title-bar .navbar-form {
+        margin-top: 5px;
+    }
+    input[id^="s-la-content-search-query-"] {
+        font-size: 16px;
+        height: 2.5em;
+        margin-top: 2px;
+        border-radius: 0;
+    }
+    .s-la-searchform-buttoncol {
+        padding: 0 3px;
+    }
+    button.btn,
+    a.btn.btn-primary {
+        text-decoration: none;
+        background-color: #c34500;
+        background-image: none;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 10px 14px;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    button.btn:hover,
+    button.btn:active,
+    button.btn:focus,
+    a.btn.btn-primary:hover,
+    a.btn.btn-primary:focus,
+    a.btn.btn-primary:active {
+        text-decoration: underline;
+        transition: none;
+        -webkit-transition: none;
+        background: none;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    button[id^="s-srch-sort-"] {
+        padding: 2px 8px;
+        background: none;
+        color: #000000;
+        border: 1px solid #cccccc;
+    }
+    button[id^="s-srch-sort-"]:hover,
+    button[id^="s-srch-sort-"]:active,
+    button[id^="s-srch-sort-"]:focus {
+        padding: 2px 8px;
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid #cccccc;
+    }
+    form[id^="s-la-searchform-"] {
+        margin-top: 0;
+    }
+    .navbar.navbar-default {
+        border-radius: 0;
+    }
+    .s-la-content-iconitem-icon .fa-envelope {
+        color: #000000;
+    }
+    .s-la-navbrowse {
+        border: 1px solid #e7e7e7;
+        border-radius: 0;
+    }
+    ul.nav.navbar-nav.s-la-navbrowse {
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    label.navbar-text {
+        line-height: inherit;
+    }
+    .navbar .btn {
+        margin-top: 2px;
+        padding: 9px 12px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .navbar .nav > li {
+        margin-bottom: 0;
+    }
+    .navbar .nav > li > a {
+        color: #000000;
+    }
+    .navbar .nav > li > a:hover,
+    .navbar .nav > li > a:active,
+    .navbar .nav > li > a:focus {
+        color: #c34500;
+        background: none;
+        text-decoration: underline;
+    }
+    .s-srch-range span {
+        font-size: 16px;
+    }
+    div[id^="s-la-askform-"] .form-actions {
+        background: none;
+    }
+    .list-unstyled {
+        padding-left: 10px;
+    }
+    @media (min-width: 1200px) {
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+</style>
